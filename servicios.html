@@ -4,6 +4,265 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Agencia de Viajes Express</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="clientes.html"
+                >Lista de Clientes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container container-servicios">
+      <!-- 1 col en móvil, 2 cols desde md -->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- 1 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/cancun.jpg" class="card-img-top" alt="Cancún" />
+            <div class="card-body">
+              <h5 class="card-title">Cancún All-inclusive</h5>
+              <ul class="mb-2">
+                <li>Duración: 4–7 días</li>
+                <li>Vuelos, hotel, transporte y consumo incluidos</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $38,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/europa.jpg" class="card-img-top" alt="Europa" />
+            <div class="card-body">
+              <h5 class="card-title">Europa en 15 días</h5>
+              <ul class="mb-2">
+                <li>Duración: 15 días</li>
+                <li>Vuelos y hoteles para tu eurotrip</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $55,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/newyork.jpg" class="card-img-top" alt="Nueva York" />
+            <div class="card-body">
+              <h5 class="card-title">Experiencia en Nueva York</h5>
+              <ul class="mb-2">
+                <li>Duración: 5–10 días</li>
+                <li>Incluye city tour y entradas a atracciones</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $42,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="img/safari.jpg"
+              class="card-img-top"
+              alt="Safari en África"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Safari en África</h5>
+              <ul class="mb-2">
+                <li>Duración: 7–12 días</li>
+                <li>Safaris guiados y hospedaje en lodges</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $60,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/asia.jpg" class="card-img-top" alt="Asia" />
+            <div class="card-body">
+              <h5 class="card-title">Maravillas de Asia</h5>
+              <ul class="mb-2">
+                <li>Duración: 12–18 días</li>
+                <li>Visita China, Japón y Tailandia</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $70,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="img/sudamerica.jpg"
+              class="card-img-top"
+              alt="Sudamérica"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ruta por Sudamérica</h5>
+              <ul class="mb-2">
+                <li>Duración: 10–15 días</li>
+                <li>Incluye Brasil, Argentina y Perú</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $48,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/islas.jpg" class="card-img-top" alt="Caribe" />
+            <div class="card-body">
+              <h5 class="card-title">Islas del Caribe</h5>
+              <ul class="mb-2">
+                <li>Duración: 5–8 días</li>
+                <li>Paquete all-inclusive en islas paradisíacas</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $35,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/dubai.jpg" class="card-img-top" alt="Dubái" />
+            <div class="card-body">
+              <h5 class="card-title">Desierto de Dubái</h5>
+              <ul class="mb-2">
+                <li>Duración: 7 días</li>
+                <li>Safari en el desierto y hospedaje de lujo</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $52,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/canada.jpg" class="card-img-top" alt="Canadá" />
+            <div class="card-body">
+              <h5 class="card-title">Canadá y sus paisajes</h5>
+              <ul class="mb-2">
+                <li>Duración: 7–10 días</li>
+                <li>Visita Montreal, Toronto y Niagara Falls</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $45,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="img/maya.jpg"
+              class="card-img-top"
+              alt="Ruta Maya México"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ruta Maya México</h5>
+              <ul class="mb-2">
+                <li>Duración: 6–10 días</li>
+                <li>Incluye Chiapas, Yucatán y Quintana Roo</li>
+              </ul>
+              <h3 class="h5 mb-3">Desde $28,000</h3>
+              <a
+                href="registro.html"
+                class="btn btn-info btn-sm boton-reserva text-white"
+                >Más Información</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

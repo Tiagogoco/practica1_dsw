@@ -93,7 +93,6 @@ function manejarSubmit(e) {
     return;
   }
 
-  // Si todo OK, guardamos en LocalStorage
   const clientes = leerClientes();
   const nuevo = {
     nombre,
@@ -108,9 +107,7 @@ function manejarSubmit(e) {
 
   mostrarAlerta("success", "Registro guardado correctamente ✅");
 
-  // Limpia el formulario (opcional)
   $("#formRegistro")?.reset();
-  // Deja el placeholder en el select
   if ($("#destino")) $("#destino").selectedIndex = 0;
 }
 
@@ -133,7 +130,7 @@ function exportarTXT() {
   a.remove();
   URL.revokeObjectURL(url);
 
-  mostrarAlerta("success", "Archivo clientes.txt generado 👍");
+  mostrarAlerta("success", "Archivo clientes.txt generado ");
 }
 
 // --- Inicialización ---

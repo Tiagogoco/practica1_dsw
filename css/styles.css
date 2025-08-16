@@ -29,6 +29,17 @@
 .boton-reserva:hover {
   transform: scale(1.1);
 }
+.container-servicios {
+  margin-top: 100px;
+}
+.container-servicios h3 {
+  font-size: 22px;
+  font: bold;
+}
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
 /* Footer */
 footer {
   font-size: 0.9rem;
