@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="bg-dark">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Agencia de Viajes Express</a>
@@ -28,15 +29,13 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
+              <a class="nav-link active" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="registro.html">Registro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="clientes.html"
-                >Lista de Clientes</a
-              >
+              <a class="nav-link" href="clientes.html">Lista de Clientes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
@@ -46,13 +45,18 @@
       </div>
     </nav>
 
-    <div class="container container-servicios">
+    <main class="container container-servicios mt-5 pt-4">
       <!-- 1 col en móvil, 2 cols desde md -->
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <!-- 1 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/cancun.jpg" class="card-img-top" alt="Cancún" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/cancun.jpg"
+              class="card-img-top"
+              alt="Cancún"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Cancún All-inclusive</h5>
               <ul class="mb-2">
@@ -61,8 +65,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $38,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Cancún All-inclusive"
+                data-price="$38,000"
+                data-desc="Relájate en playas de arena blanca con todo incluido, tours a cenotes y Chichén Itzá."
+                data-policies="Cancelación gratis hasta 7 días||50% entre 6 y 3 días||No reembolsable 48h previas"
+                data-images="img/cancun.jpg,img/cancun2.avif,img/cancun3.avif"
                 >Más Información</a
               >
             </div>
@@ -71,8 +82,13 @@
 
         <!-- 2 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/europa.jpg" class="card-img-top" alt="Europa" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/europa.jpg"
+              class="card-img-top"
+              alt="Europa"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Europa en 15 días</h5>
               <ul class="mb-2">
@@ -81,8 +97,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $55,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Europa en 15 días"
+                data-price="$55,000"
+                data-desc="Recorre París, Roma y Barcelona con tours guiados y tiempo libre."
+                data-policies="Cancelación sin costo 10 días antes||Cambios sujetos a disponibilidad||No show sin reembolso"
+                data-images="img/europa.jpg,img/europa2.avif,img/europa3.avif"
                 >Más Información</a
               >
             </div>
@@ -91,8 +114,13 @@
 
         <!-- 3 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/newyork.jpg" class="card-img-top" alt="Nueva York" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/newyork.jpg"
+              class="card-img-top"
+              alt="Nueva York"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Experiencia en Nueva York</h5>
               <ul class="mb-2">
@@ -101,8 +129,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $42,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Experiencia en Nueva York"
+                data-price="$42,000"
+                data-desc="Times Square, Central Park, Broadway y más con guía en español."
+                data-policies="Cancelación gratis hasta 5 días||Cambio de fechas con cargo||No reembolsable 24h previas"
+                data-images="img/newyork.jpg,img/nuevayork2.avif,img/nuevayork3.avif"
                 >Más Información</a
               >
             </div>
@@ -111,11 +146,12 @@
 
         <!-- 4 -->
         <div class="col">
-          <div class="card border-0">
+          <div class="card border-0 h-100">
             <img
               src="img/safari.jpg"
               class="card-img-top"
               alt="Safari en África"
+              loading="lazy"
             />
             <div class="card-body">
               <h5 class="card-title">Safari en África</h5>
@@ -125,8 +161,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $60,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Safari en África"
+                data-price="$60,000"
+                data-desc="Observa la fauna salvaje en reservas emblemáticas con rangers expertos."
+                data-policies="Se requiere seguro de viaje||Cancelación 50% hasta 7 días||No reembolsable 72h previas"
+                data-images="img/safari.jpg,img/safari2.avif,img/safari3.avif"
                 >Más Información</a
               >
             </div>
@@ -135,8 +178,13 @@
 
         <!-- 5 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/asia.jpg" class="card-img-top" alt="Asia" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/asia.jpg"
+              class="card-img-top"
+              alt="Asia"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Maravillas de Asia</h5>
               <ul class="mb-2">
@@ -145,8 +193,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $70,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Maravillas de Asia"
+                data-price="$70,000"
+                data-desc="Templos, tecnología y gastronomía en un recorrido inolvidable."
+                data-policies="Cancelación sin costo 14 días||Penalización del 30% hasta 7 días||No reembolsable 72h"
+                data-images="img/asia.jpg,img/japon2.avif,img/japon3.avif"
                 >Más Información</a
               >
             </div>
@@ -155,11 +210,12 @@
 
         <!-- 6 -->
         <div class="col">
-          <div class="card border-0">
+          <div class="card border-0 h-100">
             <img
               src="img/sudamerica.jpg"
               class="card-img-top"
               alt="Sudamérica"
+              loading="lazy"
             />
             <div class="card-body">
               <h5 class="card-title">Ruta por Sudamérica</h5>
@@ -169,8 +225,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $48,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Ruta por Sudamérica"
+                data-price="$48,000"
+                data-desc="Descubre Iguazú, Machu Picchu y Río de Janeiro con guías locales."
+                data-policies="Cancelación 100% hasta 7 días||50% entre 6 y 3 días||No reembolsable 48h"
+                data-images="img/sudamerica.jpg,img/sudamerica2.avif,img/sudamerica3.avif"
                 >Más Información</a
               >
             </div>
@@ -179,8 +242,13 @@
 
         <!-- 7 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/islas.jpg" class="card-img-top" alt="Caribe" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/islas.jpg"
+              class="card-img-top"
+              alt="Caribe"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Islas del Caribe</h5>
               <ul class="mb-2">
@@ -189,8 +257,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $35,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Islas del Caribe"
+                data-price="$35,000"
+                data-desc="Playas turquesa, snorkel y descanso total en resorts frente al mar."
+                data-policies="Cancelación sin costo 10 días||Cambios con diferencia tarifaria||No show sin reembolso"
+                data-images="img/islas.jpg,img/islas2.avif"
                 >Más Información</a
               >
             </div>
@@ -199,8 +274,13 @@
 
         <!-- 8 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/dubai.jpg" class="card-img-top" alt="Dubái" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/dubai.jpg"
+              class="card-img-top"
+              alt="Dubái"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Desierto de Dubái</h5>
               <ul class="mb-2">
@@ -209,8 +289,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $52,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Desierto de Dubái"
+                data-price="$52,000"
+                data-desc="Dunas al atardecer, cena beduina y rascacielos icónicos."
+                data-policies="Cancelación 80% hasta 5 días||50% hasta 72h||No reembolsable 48h"
+                data-images="img/dubai.jpg,img/dubai2.avif,img/dubai3.avif"
                 >Más Información</a
               >
             </div>
@@ -219,8 +306,13 @@
 
         <!-- 9 -->
         <div class="col">
-          <div class="card border-0">
-            <img src="img/canada.jpg" class="card-img-top" alt="Canadá" />
+          <div class="card border-0 h-100">
+            <img
+              src="img/canada.jpg"
+              class="card-img-top"
+              alt="Canadá"
+              loading="lazy"
+            />
             <div class="card-body">
               <h5 class="card-title">Canadá y sus paisajes</h5>
               <ul class="mb-2">
@@ -229,8 +321,15 @@
               </ul>
               <h3 class="h5 mb-3">Desde $45,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Canadá y sus paisajes"
+                data-price="$45,000"
+                data-desc="Parques nacionales, lagos y ciudades vibrantes en un solo viaje."
+                data-policies="Cancelación gratis 7 días||50% hasta 72h||No reembolsable 48h"
+                data-images="img/canada.jpg,img/canada2.avif,img/canada3.avif"
                 >Más Información</a
               >
             </div>
@@ -239,11 +338,12 @@
 
         <!-- 10 -->
         <div class="col">
-          <div class="card border-0">
+          <div class="card border-0 h-100">
             <img
               src="img/maya.jpg"
               class="card-img-top"
               alt="Ruta Maya México"
+              loading="lazy"
             />
             <div class="card-body">
               <h5 class="card-title">Ruta Maya México</h5>
@@ -253,16 +353,99 @@
               </ul>
               <h3 class="h5 mb-3">Desde $28,000</h3>
               <a
-                href="registro.html"
+                href="#"
                 class="btn btn-info btn-sm boton-reserva text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPaquete"
+                data-title="Ruta Maya México"
+                data-price="$28,000"
+                data-desc="Zonas arqueológicas, cenotes y playas con guías certificados."
+                data-policies="Cancelación sin costo 5 días||Cambios con cargo||No show sin reembolso"
+                data-images="img/maya.jpg,img/maya2.avif"
                 >Más Información</a
               >
             </div>
           </div>
         </div>
       </div>
+    </main>
+
+    <!-- Modal reutilizable -->
+    <div class="modal fade" id="modalPaquete" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitulo">Título del paquete</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Carousel dinámico -->
+            <div
+              id="modalCarousel"
+              class="carousel slide mb-3 d-none"
+              data-bs-ride="carousel"
+              aria-hidden="true"
+            >
+              <div class="carousel-inner" id="modalCarouselInner"></div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#modalCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#modalCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+
+            <p class="mb-2" id="modalDescripcion"></p>
+            <h6 class="mb-2" id="modalPrecio"></h6>
+
+            <div>
+              <h6>Políticas de cancelación</h6>
+              <ul id="modalPoliticas" class="mb-0"></ul>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <a
+              href="registro.html"
+              class="btn btn-info boton-reserva text-white"
+              >Reservar ahora</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      <p>
+        &copy; 2025 Agencia de Viajes Express. Todos los derechos reservados.
+      </p>
+    </footer>
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/servicios.js"></script>
   </body>
 </html>

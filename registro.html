@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="bg-dark text-white">
+  <body class="bg-dark text-white body-registro">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -46,7 +46,7 @@
     </nav>
 
     <!-- Formulario -->
-    <section class="container py-5 mt-5">
+    <section class="container container-registro py-5 mt-5">
       <div id="alertas" class="my-3"></div>
       <h2 class="text-center mb-4">Formulario de Registro</h2>
       <form id="formRegistro" class="bg-secondary p-4 rounded shadow">
@@ -81,16 +81,16 @@
           <label for="destino" class="form-label">Destino de interés</label>
           <select class="form-select" id="destino" name="destino" required>
             <option value="" disabled selected>Selecciona un destino</option>
-            <option>Playa del Carmen</option>
-            <option>Cancún</option>
-            <option>Puerto Vallarta</option>
-            <option>Los Cabos</option>
-            <option>Ciudad de México</option>
-            <option>Oaxaca</option>
-            <option>San Miguel de Allende</option>
-            <option>Chiapas</option>
-            <option>Querétaro</option>
-            <option>Acapulco</option>
+            <option>Cancún All-inclusive</option>
+            <option>Europa en 15 días</option>
+            <option>Experiencia en Nueva York</option>
+            <option>Safari en África</option>
+            <option>Maravillas de Asia</option>
+            <option>Ruta por Sudamérica</option>
+            <option>Islas del Caribe</option>
+            <option>Desierto de Dubái</option>
+            <option>Canadá y sus paisajes</option>
+            <option>Ruta Maya México</option>
           </select>
         </div>
 
@@ -136,19 +136,11 @@
 
         <!-- Botón -->
         <div class="text-center">
-          <button type="submit" class="btn btn-primary btn-lg boton-reserva">
+          <button type="submit" class="btn btn-secondary btn-lg boton-reserva">
             Enviar Registro
           </button>
         </div>
-        <div class="text-center">
-          <button
-            type="button"
-            id="btnExportar"
-            class="btn btn-outline-light mt-3"
-          >
-            Exportar a .txt
-          </button>
-        </div>
+        <div class="text-center"></div>
       </form>
     </section>
 

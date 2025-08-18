@@ -29,6 +29,16 @@
 .boton-reserva:hover {
   transform: scale(1.1);
 }
+.body-registro {
+  background-image: url(../img/safari.jpg);
+}
+.body-contacto {
+  background-image: url(../img/europa.jpg);
+  background-size: cover; /* La imagen cubre todo el contenedor sin deformarse */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-position: center; /* Centra la imagen */
+}
+
 .container-servicios {
   margin-top: 100px;
 }
